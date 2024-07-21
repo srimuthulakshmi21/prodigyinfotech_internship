@@ -3,68 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Muthulakshmi M | Web Developer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Muthulakshmi M</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <div class="intro">
-            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I'm a passionate web developer with skills in HTML, CSS, and JavaScript.</p>
         </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Building Innovative Web Experiences</h1>
+        <img src="C:\Users\ishwa\Downloads\Muthulakshmi M pic.jpg" alt="Muthulakshmi M Profile Picture">
+        <p>Highly skilled web developer with expertise in HTML, CSS, JavaScript</p>
     </section>
+
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a web developer based in [Your Location]. I have a background in [Your Background] and a degree in [Your Education]. With [X] years of experience in web development, I've worked on numerous projects that demonstrate my skills in front-end and back-end development.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Muthulakshmi M, a passionate web developer with a strong background in computer science and a keen eye for design.</p>
+            <h3>Education</h3>
+            <ul>
+                <li>Currently pursuing B.Tech in Computer Science and Business Systems, R.M.D Engineering College with CGPA: 8.56 (2022-2026)</li>
+                <li>Completed Higher Secondary Certification at Children's Paradise Matric Higher Secondary School with 91.17% (2022)</li>
+                <li>Completed Secondary School Leaving Certification at Children's Paradise Matric Higher Secondary School with 93% (2020)</li>
+            </ul>
+            <h3>Professional Experience</h3>
+            <ul>
+                <li>Web Development  Intern atProdigy Infotech (2024-Present)</li>
+                <li>Python programming Intern at Codsoft (2023)</li>
+            </ul>
+            <h3>Skills</h3>
+            <ul>
+                <li>Programming (Java)</li>
+                <li>Problem Solving Abilities</li>
+                <li>Business Analysis</li>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>Good Communication Skills</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card portfolio-card">
+                        <img src="project1.jpg" alt="Project 1">
+                        <div class="card-body">
+                            <h5>Rotating solar panel using arduino components</h5>
+                            <p>Description of project:</p> 
+                            <p>Developed a solar panel system utilizing Arduino for automatic sun
+tracking, optimizing energy generation. Responsibilities included hardware design,
+Arduino programming, data analysis for efficiency, testing, and troubleshooting.</p>
+                            <p>Code:
+                            <a href="https://www.example.com" target="_blank">View on github</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card portfolio-card">
+                        <img src="project2.jpg" alt="Project 2">
+                        <div class="card-body">
+                            <h5>Leveraging Sensor Technologies for Improved Driver Protection</h5>
+                            <p>Description of project:</p>
+                            <p>Description:Developed a sensor-based system to enhance driver safety by detecting hazards and providing real-time alerts. Responsibilities included system design, algorithm development, interface creation, testing, and collaboration with cross- functional teams.</p>
+                            <p>Code:
+                            <a href="https://www.example.com" target="_blank">View on github</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you would like to get in touch, please use the form below to send me a message. I look forward to hearing from you!</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Provide your queries or Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    <footer class="footer">
+        <p>&copy; 2024 Muthulakshmi M. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+
+   
 </body>
 </html>
